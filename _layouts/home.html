@@ -23,5 +23,10 @@
     {% include footer.html %}
     {% include scripts.html %}
     {% include widgets.html %}
+    <script>
+      window.addEventListener('scroll', () => {
+        document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+      });
+    </script>
   </body>
 </html>
